@@ -22,7 +22,7 @@ model Chassis
     summary_z_z=motion.summary_z_z,
     summary_a_y_g=motion.summary_a_y_g,
     summary_a_x_g=motion.summary_a_x_g,
-    summary_p_sw=0,icon_name = "modelica://Workspace/Resources/perseverance_icon.png");
+    summary_p_sw=0,icon_name = "modelica://Perseverance/Resources/perseverance_icon.png");
     .Workspace.Perseverance.Suspensions.DifferentialLinkage differentialLinkage annotation(Placement(transformation(extent = {{-50.0,-10.0},{-30.0,10.0}},origin = {0.0,0.0},rotation = 0.0)));
     .VehicleDynamics.Vehicles.Chassis.Motion.FreeMotion motion annotation(Placement(transformation(extent = {{-60.0,-10.0},{-80.0,10.0}},origin = {0.0,0.0},rotation = 0.0)));
     .Workspace.Perseverance.Wheel wheel_1 (wheel_number = 1)annotation(Placement(transformation(extent = {{-10.0,-10.0},{10.0,10.0}},origin = {-70.0,-68.0},rotation = 90.0)));
@@ -33,7 +33,7 @@ model Chassis
     .Workspace.Perseverance.Wheel wheel_6 (wheel_number = 6,left_wheel = false)annotation(Placement(transformation(extent = {{-10.0,-10.0},{10.0,10.0}},origin = {70.0,68.0},rotation = -90.0)));
     .Modelon.Mechanics.MultiBody.Parts.BodyNoStates bodyMass(rcm = {0,0,0.8},m = 1000,visualize_cm=false,visualize = false) annotation(Placement(transformation(extent = {{20.0,-20.0},{40.0,0.0}},origin = {0.0,0.0},rotation = 0.0)));
     .Modelon.Mechanics.Rotational3D.RotationalMount rotationalMount (visualize = false)annotation(Placement(transformation(extent = {{-99.89381918986484,-38.106180810135164},{-92.10618081013516,-45.893819189864836}},origin = {0.0,0.0},rotation = 0.0)));
-    .Modelica.Mechanics.MultiBody.Visualizers.FixedShape bodyVis(widthDirection = {-1,0,0},lengthDirection = {0,1,0},shapeType = "modelica://Workspace/Resources/Perseverance_body.glb",length = 1,width = 1,height = 1,extra = 1) annotation(Placement(transformation(extent = {{20.095994086371384,12.095994086371391},{35.904005913628616,27.90400591362861}},origin = {0.0,0.0},rotation = 0.0)));
+    .Modelica.Mechanics.MultiBody.Visualizers.FixedShape bodyVis(widthDirection = {-1,0,0},lengthDirection = {0,1,0},shapeType = "modelica://Perseverance/Resources/Perseverance_body.glb",length = 1,width = 1,height = 1,extra = 1) annotation(Placement(transformation(extent = {{20.095994086371384,12.095994086371391},{35.904005913628616,27.90400591362861}},origin = {0.0,0.0},rotation = 0.0)));
     .Workspace.Perseverance.Suspensions.Linkage linkage annotation(Placement(transformation(extent = {{0.0,-40.0},{-40.0,-20.0}},origin = {0.0,0.0},rotation = 0.0)));
     .Workspace.Perseverance.Suspensions.Linkage linkage2(left_linkage = false) annotation(Placement(transformation(extent = {{0.0,40.0},{-40.0,20.0}},origin = {0.0,0.0},rotation = 0.0)));
     .Modelica.Blocks.Interfaces.RealInput steerRR annotation(Placement(transformation(extent = {{-115.46021319917917,-37.86021319917917},{-99.73978680082082,-22.13978680082083}},origin = {0.0,0.0},rotation = 0.0)));
