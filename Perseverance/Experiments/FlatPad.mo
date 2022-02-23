@@ -1,6 +1,6 @@
 within Workspace.Perseverance.Experiments;
 model FlatPad
-    extends .VehicleDynamics.Vehicles.Chassis.Experiments.Templates.Minimal(redeclare replaceable .VehicleDynamics.Atmospheres.Constant atmosphere,redeclare replaceable .VehicleDynamics.Grounds.Flat ground,redeclare replaceable .Workspace.Perseverance.Chassis chassis,world(g = 3.711));
+    extends .VehicleDynamics.Vehicles.Chassis.Experiments.Templates.Minimal(redeclare replaceable .VehicleDynamics.Atmospheres.Constant atmosphere,redeclare replaceable .VehicleDynamics.Grounds.Flat ground,redeclare replaceable .Perseverance.Chassis chassis,world(g = 3.711));
     .Modelica.Blocks.Sources.Constant steerSourceFL(k = 0) annotation(Placement(transformation(extent = {{-64.0,-7.8333333333333215},{-44.0,12.166666666666679}},origin = {0.0,0.0},rotation = 0.0)));
     .Modelica.Blocks.Sources.Constant steerSourceFR(k = 0) annotation(Placement(transformation(extent = {{-64.0,-37.833333333333336},{-44.0,-17.833333333333336}},origin = {0.0,0.0},rotation = 0.0)));
     .Modelica.Blocks.Sources.Constant steerSourceRL(k = 0) annotation(Placement(transformation(extent = {{-64.0,-69.83333333333334},{-44.0,-49.833333333333336}},origin = {0.0,0.0},rotation = 0.0)));

@@ -2,55 +2,58 @@ within Workspace.Perseverance.Experiments;
 
 model DrivingFlat
     extends .VehicleDynamics.Vehicles.Chassis.Experiments.Templates.Environment(redeclare replaceable .VehicleDynamics.Atmospheres.Constant atmosphere,redeclare replaceable .VehicleDynamics.Grounds.Flat ground,world(g = 3.711));
+    parameter Real speedControlGain = 15;
+    parameter Real speedControlTimeConstant = 0.1;
     .Electrification.Machines.Examples.Machine3D motor2(
         enable_mount = false,
         redeclare replaceable .Electrification.Machines.Control.MultiMode controller(
-            speedControlGain = 15,
-            speedControlTimeConstant = 0.1,
+            speedControlGain = speedControlGain,
+            speedControlTimeConstant = speedControlTimeConstant,
             mode = .Electrification.Utilities.Types.MachineControlMode.Speed,
             w_ref = 1),visualize = false) annotation(Placement(transformation(extent = {{-10.0,-10.0},{10.0,10.0}},origin = {-28.0,18.0},rotation = -90.0)));
     .Electrification.Batteries.Examples.BatteryPackIdeal batteryPackIdeal annotation(Placement(transformation(extent = {{70.0,-30.0},{90.0,-10.0}},origin = {0.0,0.0},rotation = 0.0)));
     .Electrification.Machines.Examples.Machine3D motor1(
         enable_mount = false,
         redeclare replaceable .Electrification.Machines.Control.MultiMode controller(
-            speedControlTimeConstant = 0.1,
-            speedControlGain = 15,
+            speedControlTimeConstant = speedControlTimeConstant,
+            speedControlGain = speedControlGain,
             mode = .Electrification.Utilities.Types.MachineControlMode.Speed,
             w_ref = 1),visualize = false) annotation(Placement(transformation(extent = {{-10.0,-10.0},{10.0,10.0}},origin = {-28.0,-58.0},rotation = 90.0)));
 
     .Electrification.Machines.Examples.Machine3D motor3(
         enable_mount = false,
         redeclare replaceable .Electrification.Machines.Control.MultiMode controller(
-            speedControlTimeConstant = 0.1,
-            speedControlGain = 15,
+            speedControlTimeConstant = speedControlTimeConstant,
+            speedControlGain = speedControlGain,
             mode = .Electrification.Utilities.Types.MachineControlMode.Speed,
             w_ref = 1),visualize = false) annotation(Placement(transformation(extent = {{-10.0,-10.0},{10.0,10.0}},origin = {-0.44444444444444287,-58.22222222222223},rotation = 90.0)));
     .Electrification.Machines.Examples.Machine3D motor4(
         enable_mount = false,
         redeclare replaceable .Electrification.Machines.Control.MultiMode controller(
-            speedControlTimeConstant = 0.1,
-            speedControlGain = 15,
+            speedControlTimeConstant = speedControlTimeConstant,
+            speedControlGain = speedControlGain,
             mode = .Electrification.Utilities.Types.MachineControlMode.Speed,
             w_ref = 1),visualize = false) annotation(Placement(transformation(extent = {{-10.0,-10.0},{10.0,10.0}},origin = {-0.44444444444444287,17.77777777777778},rotation = -90.0)));
     .Electrification.Machines.Examples.Machine3D motor5(
         enable_mount = false,
         redeclare replaceable .Electrification.Machines.Control.MultiMode controller(
-            speedControlTimeConstant = 0.1,
-            speedControlGain = 15,
+            speedControlTimeConstant = speedControlTimeConstant,
+            speedControlGain = speedControlGain,
             mode = .Electrification.Utilities.Types.MachineControlMode.Speed,
             w_ref = 1),visualize = false) annotation(Placement(transformation(extent = {{-10.0,-10.0},{10.0,10.0}},origin = {28.444444444444443,-57.77777777777777},rotation = 90.0)));
     .Electrification.Machines.Examples.Machine3D motor6(
         enable_mount = false,
         redeclare replaceable .Electrification.Machines.Control.MultiMode controller(
-            speedControlTimeConstant = 0.1,
-            speedControlGain = 15,
+            speedControlTimeConstant = speedControlTimeConstant,
+            speedControlGain = speedControlGain,
             mode = .Electrification.Utilities.Types.MachineControlMode.Speed,
             w_ref = 1),visualize = false) annotation(Placement(transformation(extent = {{-10.0,-10.0},{10.0,10.0}},origin = {28.444444444444443,18.22222222222223},rotation = -90.0)));
-    .Workspace.Perseverance.Chassis chassis annotation(Placement(transformation(extent = {{-40.11678493198284,-41.05839246599143},{42.33900715420507,0.16950357710252817}},origin = {0.0,0.0},rotation = 0.0)));
+    .Perseverance.Chassis chassis annotation(Placement(transformation(extent = {{-40.11678493198284,-41.05839246599143},{42.33900715420507,0.16950357710252817}},origin = {0.0,0.0},rotation = 0.0)));
     .Modelica.Blocks.Sources.Constant steerSourceFL(k = 0) annotation(Placement(transformation(extent = {{-100.0,22.66666666666667},{-80.0,42.66666666666667}},origin = {0.0,0.0},rotation = 0.0)));
     .Modelica.Blocks.Sources.Constant steerSourceFR(k = 0) annotation(Placement(transformation(extent = {{-100.0,-7.333333333333333},{-80.0,12.666666666666668}},origin = {0.0,0.0},rotation = 0.0)));
     .Modelica.Blocks.Sources.Constant steerSourceRL(k = 0) annotation(Placement(transformation(extent = {{-100.0,-39.33333333333333},{-80.0,-19.333333333333332}},origin = {0.0,0.0},rotation = 0.0)));
     .Modelica.Blocks.Sources.Constant steerSourceRR(k = 0) annotation(Placement(transformation(extent = {{-100.0,-70.0},{-80.0,-50.0}},origin = {0.0,0.0},rotation = 0.0)));
+
 equation
     connect(motor1.flange3D,chassis.hub_1) annotation(Line(points = {{-27.999999999999996,-48},{-27.999999999999996,-41.05839246599143},{-27.748416119054657,-41.05839246599143}},color = {95,95,95}));
     connect(motor1.plug_a,batteryPackIdeal.plug_a) annotation(Line(points = {{-28.000000000000004,-68},{-28.000000000000004,-74.44444444444446},{54,-74.44444444444446},{54,-19.999999999999996},{70,-19.999999999999996}},color = {255,128,0}));
