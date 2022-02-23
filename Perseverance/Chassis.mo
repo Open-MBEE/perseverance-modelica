@@ -24,7 +24,7 @@ model Chassis
     summary_a_x_g=motion.summary_a_x_g,
     summary_p_sw=0,icon_name = "modelica://Perseverance/Resources/perseverance_icon.png",h_start = -0.0073,v_start = 0);
     .Perseverance.Suspensions.DifferentialLinkage differentialLinkage annotation(Placement(transformation(extent = {{-50.0,-10.0},{-30.0,10.0}},origin = {0.0,0.0},rotation = 0.0)));
-    .VehicleDynamics.Vehicles.Chassis.Motion.FreeMotion motion annotation(Placement(transformation(extent = {{-60.0,-10.0},{-80.0,10.0}},origin = {0.0,0.0},rotation = 0.0)));
+    .VehicleDynamics.Vehicles.Chassis.Motion.FreeMotion motion(r_x_start = r_x_start,r_y_start = r_y_start,r_z_start = r_z_start,h_start = h_start,v_start = v_start,p_x_start = p_x_start,p_y_start = p_y_start,p_z_start = p_z_start,w_z_start = w_z_start) annotation(Placement(transformation(extent = {{-60.0,-10.0},{-80.0,10.0}},origin = {0.0,0.0},rotation = 0.0)));
     .Perseverance.Wheel wheel_1 (wheel_number = 1)annotation(Placement(transformation(extent = {{-10.0,-10.0},{10.0,10.0}},origin = {-70.0,-68.0},rotation = 90.0)));
     .Perseverance.Wheel wheel_2 (wheel_number = 2,left_wheel = false)annotation(Placement(transformation(extent = {{-10.0,-10.0},{10.0,10.0}},origin = {-70.0,68.0},rotation = -90.0)));
     .Perseverance.Wheel wheel_3 (wheel_number = 3)annotation(Placement(transformation(extent = {{-10.0,-10.0},{10.0,10.0}},origin = {0.0,-68.0},rotation = 90.0)));
