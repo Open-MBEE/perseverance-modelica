@@ -1,4 +1,4 @@
-within Workspace.Perseverance.Suspensions;
+within Perseverance.Suspensions;
 model TestDifferentialLinkage
     extends Modelon.Icons.Experiment;
     parameter Boolean left_linkage = true;
@@ -9,7 +9,7 @@ model TestDifferentialLinkage
     parameter .Modelica.SIunits.Position r0S_1[3] = {1.13,1.0625,0.14587} "Position of front steer joint relative frame_a";
     parameter .Modelica.SIunits.Position r0S_2[3] = {-1.13,1.0625,0.14587} "Position of rear steer joint relative frame_a";
     inner .VehicleDynamics.World world(animateWorld = true) annotation(Placement(transformation(extent = {{-80.0,-10.0},{-60.0,10.0}},origin = {0.0,0.0},rotation = 0.0)));
-    .Workspace.Perseverance.Suspensions.DifferentialLinkage differentialLinkage annotation(Placement(transformation(extent = {{-20,-10},{0,10}},origin = {0,0},rotation = 0)));
+    .Perseverance.Suspensions.DifferentialLinkage differentialLinkage annotation(Placement(transformation(extent = {{-20,-10},{0,10}},origin = {0,0},rotation = 0)));
     .Modelon.Mechanics.MultiBody.Parts.BodyNoStates bodyNoStates2(rcm = differentialLinkage.r0J2 + {0.2,0,0}) annotation(Placement(transformation(extent = {{20.0,20.0},{40.0,40.0}},origin = {0.0,0.0},rotation = 0.0)));
     .Modelon.Mechanics.MultiBody.Forces.RevoluteProjection revoluteProjection(n = {0,1,0},q = {0,0,1}) annotation(Placement(transformation(extent = {{-40.0,-20.0},{-20.0,-40.0}},origin = {0.0,0.0},rotation = 0.0)));
     .Modelon.Mechanics.Rotational.Actuators.RelativePosition relativePosition annotation(Placement(transformation(extent = {{-40.0,-40.0},{-20.0,-60.0}},origin = {0.0,0.0},rotation = 0.0)));

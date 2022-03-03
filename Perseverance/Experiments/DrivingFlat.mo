@@ -1,4 +1,4 @@
-within Workspace.Perseverance.Experiments;
+within Perseverance.Experiments;
 
 model DrivingFlat
     extends .VehicleDynamics.Vehicles.Chassis.Experiments.Templates.Environment(redeclare replaceable .VehicleDynamics.Atmospheres.Constant atmosphere,redeclare replaceable .VehicleDynamics.Grounds.Flat ground,world(g = 3.711));
@@ -46,7 +46,7 @@ model DrivingFlat
             speedControlGain = 15,
             mode = .Electrification.Utilities.Types.MachineControlMode.Speed,
             w_ref = 1),visualize = false) annotation(Placement(transformation(extent = {{-10.0,-10.0},{10.0,10.0}},origin = {28.444444444444443,18.22222222222223},rotation = -90.0)));
-    .Workspace.Perseverance.Chassis chassis annotation(Placement(transformation(extent = {{-40.11678493198284,-41.05839246599143},{42.33900715420507,0.16950357710252817}},origin = {0.0,0.0},rotation = 0.0)));
+    .Perseverance.Chassis chassis annotation(Placement(transformation(extent = {{-40.11678493198284,-41.05839246599143},{42.33900715420507,0.16950357710252817}},origin = {0.0,0.0},rotation = 0.0)));
     .Modelica.Blocks.Sources.Constant steerSourceFL(k = 0) annotation(Placement(transformation(extent = {{-100.0,22.66666666666667},{-80.0,42.66666666666667}},origin = {0.0,0.0},rotation = 0.0)));
     .Modelica.Blocks.Sources.Constant steerSourceFR(k = 0) annotation(Placement(transformation(extent = {{-100.0,-7.333333333333333},{-80.0,12.666666666666668}},origin = {0.0,0.0},rotation = 0.0)));
     .Modelica.Blocks.Sources.Constant steerSourceRL(k = 0) annotation(Placement(transformation(extent = {{-100.0,-39.33333333333333},{-80.0,-19.333333333333332}},origin = {0.0,0.0},rotation = 0.0)));

@@ -1,12 +1,12 @@
-within Workspace.Perseverance.Suspensions;
+within Perseverance.Suspensions;
 model TestLinkage
     extends Modelon.Icons.Experiment;
     inner .VehicleDynamics.World world annotation(Placement(transformation(extent = {{-40,30},{-20,50}},origin = {0,0},rotation = 0)));
     inner .VehicleDynamics.Grounds.Flat ground(z = -0.28,x_min = -1,x_max = 1,y_min = -1,y_max = 1) annotation(Placement(transformation(extent = {{-32,-80},{8,-60}},origin = {0,0},rotation = 0)));
-    Workspace.Perseverance.Wheel wheel_ (visualization(visualize_contact_forces = false,visualize_tread_texture = false))annotation(Placement(transformation(extent = {{-10.0,-10.0},{10.0,10.0}},origin = {-40.0,-30.0},rotation = 90.0)));
-    Workspace.Perseverance.Wheel wheel_2 (visualization(visualize_contact_forces = false,visualize_tread_texture = false))annotation(Placement(transformation(extent = {{-10.0,-10.0},{10.0,10.0}},origin = {-10.0,-30.0},rotation = 90.0)));
-    Workspace.Perseverance.Wheel wheel_3 (visualization(visualize_tread_texture = false,visualize_contact_forces = false))annotation(Placement(transformation(extent = {{-10.0,-10.0},{10.0,10.0}},origin = {20.0,-30.0},rotation = 90.0)));
-    .Workspace.Perseverance.Suspensions.Linkage linkage annotation(Placement(transformation(extent = {{-34.095581711110285,-4.047790855555142},{6.095581711110283,16.047790855555142}},origin = {0.0,0.0},rotation = 0.0)));
+    Perseverance.Wheel wheel_ (visualization(visualize_contact_forces = false,visualize_tread_texture = false))annotation(Placement(transformation(extent = {{-10.0,-10.0},{10.0,10.0}},origin = {-40.0,-30.0},rotation = 90.0)));
+    Perseverance.Wheel wheel_2 (visualization(visualize_contact_forces = false,visualize_tread_texture = false))annotation(Placement(transformation(extent = {{-10.0,-10.0},{10.0,10.0}},origin = {-10.0,-30.0},rotation = 90.0)));
+    Perseverance.Wheel wheel_3 (visualization(visualize_tread_texture = false,visualize_contact_forces = false))annotation(Placement(transformation(extent = {{-10.0,-10.0},{10.0,10.0}},origin = {20.0,-30.0},rotation = 90.0)));
+    .Perseverance.Suspensions.Linkage linkage annotation(Placement(transformation(extent = {{-34.095581711110285,-4.047790855555142},{6.095581711110283,16.047790855555142}},origin = {0.0,0.0},rotation = 0.0)));
     .Modelica.Blocks.Sources.Constant steerSource1(k = 0) annotation(Placement(transformation(extent = {{68.0,10.0},{48.0,30.0}},origin = {0.0,0.0},rotation = 0.0)));
     .Modelica.Blocks.Sources.Constant steerSource2(k = 0) annotation(Placement(transformation(extent = {{68.0,-20.0},{48.0,0.0}},origin = {0.0,0.0},rotation = 0.0)));
 equation
