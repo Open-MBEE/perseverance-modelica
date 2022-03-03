@@ -1,4 +1,4 @@
-within Workspace.Perseverance.Experiments;
+within Perseverance.Experiments;
 model Spin
     extends .VehicleDynamics.Vehicles.Chassis.Experiments.Templates.Environment(redeclare replaceable .VehicleDynamics.Atmospheres.Constant atmosphere,redeclare replaceable .VehicleDynamics.Grounds.Flat ground,world(g = 3.711));
     .Electrification.Machines.Examples.Machine3D motor(enable_mount = false,multibody3D(visualize_shape = false),redeclare replaceable .Electrification.Machines.Control.MultiMode controller(speedControlGain = 15,speedControlTimeConstant = 0.1,w_ref = -1,mode = .Electrification.Utilities.Types.MachineControlMode.Speed)) annotation(Placement(transformation(extent = {{-10.0,-10.0},{10.0,10.0}},origin = {-28.203703703703702,17.648148148148138},rotation = -90.0)));

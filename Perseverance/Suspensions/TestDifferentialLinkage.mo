@@ -1,4 +1,4 @@
-within Workspace.Perseverance.Suspensions;
+within Perseverance.Suspensions;
 model TestDifferentialLinkage
     extends Modelon.Icons.Experiment;
     parameter Boolean left_linkage = true;

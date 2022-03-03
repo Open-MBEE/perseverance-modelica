@@ -1,4 +1,4 @@
-within Workspace.Perseverance;
+within Perseverance;
 model Chassis
     extends .VehicleDynamics.Vehicles.Chassis.Interfaces.SixWheeler(
     summary_r0_summary={0,0,0},

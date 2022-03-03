@@ -1,4 +1,4 @@
-within Workspace.Perseverance.Experiments;
+within Perseverance.Experiments;
 
 model DrivingFlat
     extends .VehicleDynamics.Vehicles.Chassis.Experiments.Templates.Environment(redeclare replaceable .VehicleDynamics.Atmospheres.Constant atmosphere,redeclare replaceable .VehicleDynamics.Grounds.Flat ground,world(g = 3.711));
