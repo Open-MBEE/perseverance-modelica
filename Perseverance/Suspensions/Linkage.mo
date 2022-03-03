@@ -1,4 +1,4 @@
-within Workspace.Perseverance.Suspensions;
+within Perseverance.Suspensions;
 model Linkage
     parameter Boolean left_linkage = true;
     parameter .Modelica.SIunits.Position r0BJ[3]  = {0.214,left * 0.65699,0.85684} "Position of upper bogie joint";

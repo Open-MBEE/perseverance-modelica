@@ -1,4 +1,4 @@
-within Workspace.Perseverance.Suspensions;
+within Perseverance.Suspensions;
 model DifferentialLinkage
     .Modelon.Mechanics.MultiBody.Joints.Advanced.ActuatedRevolute actuatedRevolute (stateSelect = StateSelect.always)annotation(Placement(transformation(extent = {{-60.0,-10.0},{-40.0,10.0}},origin = {0.0,0.0},rotation = 0.0)));
     .Modelica.Mechanics.MultiBody.Interfaces.Frame_a frame_a annotation(Placement(transformation(extent = {{-16.0,-16.0},{16.0,16.0}},origin = {-100.0,0.0},rotation = -180.0)));
