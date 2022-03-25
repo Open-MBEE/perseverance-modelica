@@ -22,15 +22,18 @@ model Chassis
     summary_z_z=motion.summary_z_z,
     summary_a_y_g=motion.summary_a_y_g,
     summary_a_x_g=motion.summary_a_x_g,
-    summary_p_sw=0,icon_name = "modelica://Perseverance/Resources/perseverance_icon.png",h_start = -0.0073,v_start = 0);
+    summary_p_sw=0,icon_name = "modelica://Perseverance/Resources/perseverance_icon.png",h_start = 0 + wheel_1.R0 - 0.2625);
     .Perseverance.Suspensions.DifferentialLinkage differentialLinkage annotation(Placement(transformation(extent = {{-50.0,-10.0},{-30.0,10.0}},origin = {0.0,0.0},rotation = 0.0)));
     .VehicleDynamics.Vehicles.Chassis.Motion.FreeMotion motion(r_x_start = r_x_start,r_y_start = r_y_start,r_z_start = r_z_start,h_start = h_start,v_start = v_start,p_x_start = p_x_start,p_y_start = p_y_start,p_z_start = p_z_start,w_z_start = w_z_start) annotation(Placement(transformation(extent = {{-60.0,-10.0},{-80.0,10.0}},origin = {0.0,0.0},rotation = 0.0)));
-    .Perseverance.Wheel wheel_1 (wheel_number = 1)annotation(Placement(transformation(extent = {{-10.0,-10.0},{10.0,10.0}},origin = {-70.0,-68.0},rotation = 90.0)));
-    .Perseverance.Wheel wheel_2 (wheel_number = 2,left_wheel = false)annotation(Placement(transformation(extent = {{-10.0,-10.0},{10.0,10.0}},origin = {-70.0,68.0},rotation = -90.0)));
-    .Perseverance.Wheel wheel_3 (wheel_number = 3)annotation(Placement(transformation(extent = {{-10.0,-10.0},{10.0,10.0}},origin = {0.0,-68.0},rotation = 90.0)));
-    .Perseverance.Wheel wheel_4 (wheel_number = 4,left_wheel = false)annotation(Placement(transformation(extent = {{-10.0,-10.0},{10.0,10.0}},origin = {0.0,68.0},rotation = -90.0)));
-    .Perseverance.Wheel wheel_5 (wheel_number = 5)annotation(Placement(transformation(extent = {{-10.0,-10.0},{10.0,10.0}},origin = {70.0,-68.0},rotation = 90.0)));
-    .Perseverance.Wheel wheel_6 (wheel_number = 6,left_wheel = false)annotation(Placement(transformation(extent = {{-10.0,-10.0},{10.0,10.0}},origin = {70.0,68.0},rotation = -90.0)));
+    replaceable model Wheel= .Perseverance.Wheel  constrainedby .VehicleDynamics.Vehicles.Chassis.Wheels.Pacejka02;
+    Wheel wheel_1 (wheel_number = 1)annotation(Placement(transformation(extent = {{-10.0,-10.0},{10.0,10.0}},origin = {-70.0,-68.0},rotation = 90.0)));
+    Wheel wheel_2 (wheel_number = 2,left_wheel = false)annotation(Placement(transformation(extent = {{-10.0,-10.0},{10.0,10.0}},origin = {-70.0,68.0},rotation = -90.0)));
+    Wheel wheel_3 (wheel_number = 3)annotation(Placement(transformation(extent = {{-10.0,-10.0},{10.0,10.0}},origin = {0.0,-68.0},rotation = 90.0)));
+    Wheel wheel_4 (wheel_number = 4,left_wheel = false)annotation(Placement(transformation(extent = {{-10.0,-10.0},{10.0,10.0}},origin = {0.0,68.0},rotation = -90.0)));
+    Wheel wheel_5 (wheel_number = 5)annotation(Placement(transformation(extent = {{-10.0,-10.0},{10.0,10.0}},origin = {70.0,-68.0},rotation = 90.0)));
+    Wheel wheel_6 (wheel_number = 6,left_wheel = false)annotation(Placement(transformation(extent = {{-10.0,-10.0},{10.0,10.0}},origin = {70.0,68.0},rotation = -90.0)));
+    
+
     .Modelon.Mechanics.MultiBody.Parts.BodyNoStates bodyMass(rcm = {0,0,0.8},m = 1000,visualize_cm=false,visualize = false) annotation(Placement(transformation(extent = {{20.0,-20.0},{40.0,0.0}},origin = {0.0,0.0},rotation = 0.0)));
     .Modelon.Mechanics.Rotational3D.RotationalMount rotationalMount (visualize = false)annotation(Placement(transformation(extent = {{-99.89381918986484,-38.106180810135164},{-92.10618081013516,-45.893819189864836}},origin = {0.0,0.0},rotation = 0.0)));
     .Modelica.Mechanics.MultiBody.Visualizers.FixedShape bodyVis(widthDirection = {-1,0,0},lengthDirection = {0,1,0},shapeType = "modelica://Perseverance/Resources/Perseverance_body.glb",length = 1,width = 1,height = 1,extra = 1) annotation(Placement(transformation(extent = {{20.095994086371384,12.095994086371391},{35.904005913628616,27.90400591362861}},origin = {0.0,0.0},rotation = 0.0)));
