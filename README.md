@@ -47,3 +47,10 @@ In Ingenuity.Experiments there are six example experiments that can be simulated
 Acknowledgements
 -----------
 The visualization elements are extracted from https://mars.nasa.gov/resources/25043/mars-ingenuity-helicopter-3d-model/. This is also where the main geometrical parameters are gathered.
+
+ExampleModels
+=====
+
+This package contains experiments showing how both the Perseverance and Ingenuity models can be simulated together.
+
+![Hover](ExampleModels/Resources/images/roverAndHelicopter.gif)
