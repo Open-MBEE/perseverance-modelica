@@ -46,4 +46,4 @@ In Ingenuity.Experiments there are six example experiments that can be simulated
 
 Acknowledgements
 -----------
-The visualization elements are extracted from https://mars.nasa.gov/system/resources/gltf_files/25043_Ingenuity_v3.glb. This is also where the main geometrical parameters are gathered.
+The visualization elements are extracted from https://mars.nasa.gov/resources/25043/mars-ingenuity-helicopter-3d-model/. This is also where the main geometrical parameters are gathered.
