@@ -12,11 +12,13 @@ The model package is based on **Vehicle Dynamics Library** and **Electrification
 Quick start
 --------
 
-In Perseverance.Experiments there are four example experiments that can be simulated out of the box:
+In Perseverance.Experiments there are six example experiments that can be simulated out of the box:
  - **FlatPad** - Standing still on flat ground
  - **DrivingFlat** - Driving forward on flat ground at a constant speed
  - **DrivingCleats** - Driving over a rectangular cleat at a constant speed
  - **Spin** - Spin in place by driving wheels on each side in opposite directions and adding the appropriate steering angles to the corner wheels
+ - **DrivingUneven** - Driving forward over uneven ground generated using the Spirit_landing_site 3D model
+ - **DrivingUneven2** - Driving forward over uneven ground generated using the M2020 ZCAM -- Hogwallow Flats, Sol 461 3D model
 
 Acknowledgements
 -----------
