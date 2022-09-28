@@ -6,14 +6,14 @@ model ActuateBodyOverFlat
     redeclare replaceable .Ingenuity.Chassis.Bodies.Ingenuity body,
     velo(k={60,0,0}),
     redeclare replaceable .Modelica.Blocks.Sources.Sine z_disp(
-      freqHz=1,
+      f=1,
       startTime=1,
       amplitude=0.05,
       offset=0),
     redeclare replaceable .Modelica.Blocks.Sources.Constant roll_angle(
       k=0),
     redeclare replaceable .Modelica.Blocks.Sources.Sine pitch_angle(
-      freqHz=1,
+      f=1,
       startTime=2,
       amplitude=0.03490657),
     redeclare replaceable .Modelica.Blocks.Sources.Constant yaw_angle(

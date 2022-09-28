@@ -1,13 +1,13 @@
 within Perseverance.Suspensions;
 model Linkage
     parameter Boolean left_linkage = true;
-    parameter .Modelica.SIunits.Position r0BJ[3]  = {0.214,0.65699,0.85684} "Position of upper bogie joint";
-    parameter .Modelica.SIunits.Position r0H_1[3]  = {1.0801,1.1452,0.26208}"Position of hub 1 relative frame_a";
-    parameter .Modelica.SIunits.Position r0H_2[3]  = {-0.10488,1.2672,0.26248}"Position of hub 2 relative frame_a";
-    parameter .Modelica.SIunits.Position r0H_3[3]  = {-1.1799,1.1452,0.26537}"Position of hub 3 relative frame_a";
-    parameter .Modelica.SIunits.Position r0J[3]  = {-0.53999,1.0291,0.66385}"Position of front bogie joint relative frame_a";
-    parameter .Modelica.SIunits.Position r0S_1[3]  = {1.095,1.0625,0.85685}"Position of front steer joint relative frame_a";
-    parameter .Modelica.SIunits.Position r0S_2[3]  = {-1.165,1.0625,0.85684}"Position of rear steer joint relative frame_a";
+    parameter .Modelica.Units.SI.Position r0BJ[3]  = {0.214,0.65699,0.85684} "Position of upper bogie joint";
+    parameter .Modelica.Units.SI.Position r0H_1[3]  = {1.0801,1.1452,0.26208}"Position of hub 1 relative frame_a";
+    parameter .Modelica.Units.SI.Position r0H_2[3]  = {-0.10488,1.2672,0.26248}"Position of hub 2 relative frame_a";
+    parameter .Modelica.Units.SI.Position r0H_3[3]  = {-1.1799,1.1452,0.26537}"Position of hub 3 relative frame_a";
+    parameter .Modelica.Units.SI.Position r0J[3]  = {-0.53999,1.0291,0.66385}"Position of front bogie joint relative frame_a";
+    parameter .Modelica.Units.SI.Position r0S_1[3]  = {1.095,1.0625,0.85685}"Position of front steer joint relative frame_a";
+    parameter .Modelica.Units.SI.Position r0S_2[3]  = {-1.165,1.0625,0.85684}"Position of rear steer joint relative frame_a";
     parameter Real left = if left_linkage then 1 else -1;
     
     .Modelica.Blocks.Interfaces.RealInput steer_front annotation(Placement(transformation(extent = {{240.0,40.0},{200.0,80.0}},origin = {0.0,0.0},rotation = 0.0)));

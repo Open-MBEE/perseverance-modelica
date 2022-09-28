@@ -3,10 +3,10 @@ within Perseverance.Electrical;
 model BatteryPack "Battery pack: Ideal capacity, no losses, fixed limits"
 
   extends .Electrification.Batteries.Templates.BatteryPackLumped(
-    redeclare replaceable .Electrification.Batteries.Core.Examples.BatteryIdeal core,
+    redeclare replaceable .Electrification.Batteries.Core.Examples.Infinite core,
     redeclare replaceable .Electrification.Batteries.Electrical.Pack.Ideal electrical,
     redeclare replaceable .Electrification.Batteries.Thermal.Examples.Lumped thermal,
-    redeclare replaceable .Electrification.Batteries.Control.NoControl controller,
+    redeclare replaceable .Electrification.Batteries.Control.None controller,
     fixed_temperature=true,
     ns=100,
     np=2);

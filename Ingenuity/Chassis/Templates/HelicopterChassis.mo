@@ -1,29 +1,29 @@
 within Ingenuity.Chassis.Templates;
 partial model HelicopterChassis
     
-    parameter Modelica.SIunits.Position[3] r0_summary={0,0,0}
+    parameter Modelica.Units.SI.Position[3] r0_summary={0,0,0}
     "Location from vehicleFrame where summary variables are resolved";
     
-    parameter Modelica.SIunits.Position r_x_start=0
+    parameter Modelica.Units.SI.Position r_x_start=0
     "Initial x position"
     annotation (Dialog(tab="Initialization", group="Start values"));
-    parameter Modelica.SIunits.Position r_y_start=0
+    parameter Modelica.Units.SI.Position r_y_start=0
     "Initial y position"
     annotation (Dialog(tab="Initialization", group="Start values"));
-    parameter Modelica.SIunits.Position r_z_start=0
+    parameter Modelica.Units.SI.Position r_z_start=0
     "Initial z position"
     annotation (Dialog(tab="Initialization", group="Start values"));
-    parameter Modelica.SIunits.Position h_start=0 "Initial height"
+    parameter Modelica.Units.SI.Position h_start=0 "Initial height"
     annotation (Dialog(tab="Initialization",group="Start values"));
-    parameter Modelica.SIunits.Angle p_x_start=0 "Initial roll angle"
+    parameter Modelica.Units.SI.Angle p_x_start=0 "Initial roll angle"
     annotation (Dialog(tab="Initialization", group="Start values"));
-    parameter Modelica.SIunits.Angle p_y_start=0 "Initial pitch angle"
+    parameter Modelica.Units.SI.Angle p_y_start=0 "Initial pitch angle"
     annotation (Dialog(tab="Initialization", group="Start values"));
-    parameter Modelica.SIunits.Angle p_z_start=0 "Initial yaw angle"
+    parameter Modelica.Units.SI.Angle p_z_start=0 "Initial yaw angle"
     annotation (Dialog(tab="Initialization", group="Start values"));
-    parameter Modelica.SIunits.AngularVelocity w_z_start=0 "Initial yaw rate"
+    parameter Modelica.Units.SI.AngularVelocity w_z_start=0 "Initial yaw rate"
     annotation (Dialog(tab="Initialization", group="Start values"));
-    parameter Modelica.SIunits.Velocity v_start=0 "Initial speed"
+    parameter Modelica.Units.SI.Velocity v_start=0 "Initial speed"
     annotation (Dialog(tab="Initialization",group="Start values"));
     parameter Boolean enable_inertial_states=true
     "Set to false when fixing vehicleFrame"
