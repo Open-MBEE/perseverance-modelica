@@ -23,6 +23,9 @@ Acknowledgements
 The visualization elements are extracted from https://github.com/nasa/NASA-3D-Resources/tree/master/3D%20Models/perseverance-GLB. This is also where the main geometrical parameters are gathered.
 
 The visualizer Perseverance/Resources/Spirit_landing_site.glb  is extracted from https://github.com/nasa/NASA-3D-Resources/tree/master/3D%20Models/Spirit%20Landing%20Site. This is also used to generate the VDL ground model data used in Perseverance.Experiments.DrivingUneven.
+
+"M2020 ZCAM -- Hogwallow Flats, Sol 461" (https://skfb.ly/ovp6s) by Mastcam-Z is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+
 Ingenuity
 =====
 
