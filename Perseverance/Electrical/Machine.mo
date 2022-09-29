@@ -6,7 +6,7 @@ model Machine "Electric machine with MutliBody3D support"
     redeclare replaceable .Electrification.Machines.Mechanical.RotorInertia mechanical,
     redeclare replaceable .Electrification.Machines.Thermal.MachineConverterLumped thermal,
     redeclare replaceable .Electrification.Machines.Core.Examples.Ideal core(limits(enable_events = false)),
-    redeclare replaceable .Electrification.Machines.Control.MultiMode controller(mode = Electrification.Utilities.Types.MachineControlMode.Speed,external_speed = true),fixed_temperature = true,multibody3D(visualize_shape = false),enable_mount = false);
+    redeclare replaceable .Electrification.Machines.Control.MultiMode controller(mode = Electrification.Utilities.Types.MachineControlMode.Speed,external_speed = true),fixed_temperature = true,multibody3D(visualize_shape = false),enable_mount = false,visualize = false);
 annotation (Documentation(revisions="<html>Copyright &copy; 2004-2021, MODELON AB <br /> The use of this software component is regulated by the licensing conditions for Modelon Libraries. <br />This copyright notice must, unaltered, accompany all components that are derived from, copied from, <br />or by other means have their origin from any Modelon Library.</html>", info="<html>
 <p>This is an example of a general torque controlled electric machine, with support for use in a <a href=\"modelica://Electrification.Machines.MultiBody3D\">MultiBody3D</a> system model.</p>
 <p>This is a &quot;generalized machine&quot;, which often represents an AC machine coupled with an inverter. Refer to the package <a href=\"modelica://Electrification.Machines.Information\">Information</a> for more details about this concept.</p>
