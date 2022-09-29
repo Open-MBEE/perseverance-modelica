@@ -3,7 +3,9 @@ Perseverance
 
 This is a model of the Perseverance rover.
 
-![driving over a cleat](Perseverance/Resources/images/driveUneven.gif)
+![driving over uneven ground](Perseverance/Resources/images/driveUneven.png)
+
+![driving over uneven ground](Perseverance/Resources/images/driveUneven.gif)
 
 Prerequisites
 -------
