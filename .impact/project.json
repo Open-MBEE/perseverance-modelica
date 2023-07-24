@@ -1,0 +1,89 @@
+{
+  "name": "Perseverance-modelica",
+  "format": "1.0.0",
+  "dependencies": [
+    {
+      "name": "Modelica",
+      "versionSpecifier": "4.0.0"
+    },
+    {
+      "name": "Modelon",
+      "versionSpecifier": "4.2.0+build.68"
+    },
+    {
+      "name": "Electrification",
+      "versionSpecifier": "1.9.0+build.71"
+    },
+    {
+      "name": "VehicleDynamics",
+      "versionSpecifier": "4.2.0+build.128"
+    }
+  ],
+  "content": [
+    {
+      "relpath": "Python/Wheel_3.mo",
+      "contentType": "MODELICA",
+      "name": "Wheel_3",
+      "defaultDisabled": false,
+      "id": "7cd4e3385e3d4dd9ab10660ce0e7a04c"
+    },
+    {
+      "relpath": "Perseverance",
+      "contentType": "MODELICA",
+      "name": "Perseverance",
+      "defaultDisabled": false,
+      "id": "6b919e57b7954ccd882c3430fa0b2958"
+    },
+    {
+      "relpath": "ExampleModels",
+      "contentType": "MODELICA",
+      "name": "ExampleModels",
+      "defaultDisabled": false,
+      "id": "51377584082d46cbb06f5a0d82be2736"
+    },
+    {
+      "relpath": "Ingenuity",
+      "contentType": "MODELICA",
+      "name": "Ingenuity",
+      "defaultDisabled": false,
+      "id": "0e407b068f644e3cb84d9add449a77d7"
+    },
+    {
+      "relpath": "Resources/Views",
+      "contentType": "VIEWS",
+      "defaultDisabled": false,
+      "id": "0411634763304de996411a79a3c2eb7c"
+    },
+    {
+      "relpath": "Resources/Favorites",
+      "contentType": "FAVORITES",
+      "defaultDisabled": false,
+      "id": "ab30e9448dbe44a799e5f931e7e2a3e6"
+    },
+    {
+      "relpath": "Resources/CustomFunctions",
+      "contentType": "CUSTOM_FUNCTIONS",
+      "defaultDisabled": false,
+      "id": "426c6243b12249a88aa6f88c59169c58"
+    },
+    {
+      "relpath": "Resources/Custom",
+      "contentType": "GENERIC",
+      "defaultDisabled": false,
+      "id": "7aef936a8e014d5eb05a5151a5e16422"
+    },
+    {
+      "relpath": "ReferenceResults",
+      "contentType": "REFERENCE_RESULTS",
+      "defaultDisabled": false,
+      "id": "e391ddaf19fa4d10bc50cf23e23d8af8"
+    },
+    {
+      "relpath": "Resources/ExperimentDefinitions",
+      "contentType": "EXPERIMENT_DEFINITIONS",
+      "defaultDisabled": false,
+      "id": "30e00df456d14c1ea6ed1f67c239da41"
+    }
+  ],
+  "executionOptions": []
+}
