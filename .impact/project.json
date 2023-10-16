@@ -1,0 +1,89 @@
+{
+  "name": "Perseverance-modelica",
+  "format": "1.0.0",
+  "dependencies": [
+    {
+      "name": "Modelica",
+      "versionSpecifier": "4.0.0"
+    },
+    {
+      "name": "VehicleDynamics",
+      "versionSpecifier": "4.3.0"
+    },
+    {
+      "name": "Modelon",
+      "versionSpecifier": "4.3.0"
+    },
+    {
+      "name": "Electrification",
+      "versionSpecifier": "1.10.0"
+    }
+  ],
+  "content": [
+    {
+      "relpath": "ExampleModels",
+      "contentType": "MODELICA",
+      "name": "ExampleModels",
+      "defaultDisabled": false,
+      "id": "9ecbc7fb51a84f9088641c89108f8270"
+    },
+    {
+      "relpath": "Ingenuity",
+      "contentType": "MODELICA",
+      "name": "Ingenuity",
+      "defaultDisabled": false,
+      "id": "c0196a67ebd242fbae89012ad9959545"
+    },
+    {
+      "relpath": "Perseverance",
+      "contentType": "MODELICA",
+      "name": "Perseverance",
+      "defaultDisabled": false,
+      "id": "2db6e4c347e343cfa4ac5565a6ead8bf"
+    },
+    {
+      "relpath": "Python/Wheel_3.mo",
+      "contentType": "MODELICA",
+      "name": "Wheel_3",
+      "defaultDisabled": false,
+      "id": "e12acdb8c0cf43519bfcad85af8c1ea4"
+    },
+    {
+      "relpath": "Resources/Views",
+      "contentType": "VIEWS",
+      "defaultDisabled": false,
+      "id": "978ee67036b04a78b0450fc6b7034848"
+    },
+    {
+      "relpath": "Resources/Favorites",
+      "contentType": "FAVORITES",
+      "defaultDisabled": false,
+      "id": "d796fb9985554bc0bc2fbc6080f27ade"
+    },
+    {
+      "relpath": "Resources/CustomFunctions",
+      "contentType": "CUSTOM_FUNCTIONS",
+      "defaultDisabled": false,
+      "id": "f43d14c042c3416b906d7c33b52fbdcb"
+    },
+    {
+      "relpath": "Resources/Custom",
+      "contentType": "GENERIC",
+      "defaultDisabled": false,
+      "id": "55bcf2f00d774373ac6554b378f562eb"
+    },
+    {
+      "relpath": "ReferenceResults",
+      "contentType": "REFERENCE_RESULTS",
+      "defaultDisabled": false,
+      "id": "82f9922187674db5b8410e3e682124f3"
+    },
+    {
+      "relpath": "Resources/ExperimentDefinitions",
+      "contentType": "EXPERIMENT_DEFINITIONS",
+      "defaultDisabled": false,
+      "id": "a6d7120eaec24c5b83b0a71231222c43"
+    }
+  ],
+  "executionOptions": []
+}
