@@ -24,7 +24,7 @@ Once logged into Modelon Impact Pro...
 1. Select **Repository Management** from the Apps menu.
 ![step1](./img/step1.png)
 1. Select **New**
-	1. **Repository URL**; paste **https://github.com/Open-MBEE/perseverance-modelica**
+	1. **Repository URL** - paste https://github.com/Open-MBEE/perseverance-modelica
 	1. Select **Git**
 	1. Consult the [Compatibility with Modelon Impact Versions](#Compatibility-with-Modelon-Impact-Versions) if you are using an older version of Modelon Impact.
 	1. Select **CLONE** - N.B. You need to configure your credentials before cloning a repository.
