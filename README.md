@@ -13,9 +13,9 @@ This repository contains Modelon experiments for NASA's Perseverance and Ingenui
 
 | Github Branch                                                                              | Modelon Impact Version |
 |--------------------------------------------------------------------------------------------|------------------------|
-| [vdl-4.1](https://github.com/Open-MBEE/perseverance-modelica/tree/vdl-4.1)                 | 1.8.0                  |
-| [vdl-4-2-upgrade](https://github.com/Open-MBEE/perseverance-modelica/tree/vdl-4-2-upgrade) | ?                      |
-| [vdl-4-3-upgrade](https://github.com/Open-MBEE/perseverance-modelica/tree/vdl-4-3-upgrade) | ?                      |
+| [vdl-4.1](https://github.com/Open-MBEE/perseverance-modelica/tree/vdl-4.1)                 | Impact 2022.2 (1.8.)   |
+| [vdl-4-2-upgrade](https://github.com/Open-MBEE/perseverance-modelica/tree/vdl-4-2-upgrade) | Impact 2023.1 (1.10.)  |
+| [vdl-4-3-upgrade](https://github.com/Open-MBEE/perseverance-modelica/tree/vdl-4-3-upgrade) | Impact 2023.2 (2.9.*)  |
 
 # Getting Started
 
