@@ -1,64 +1,46 @@
-Perseverance
-=====
+Perseverance Modelica
+=====================
 
-This is a model of the Perseverance rover.
+This repository contains Modelon experiments for NASA's Perseverance and Ingenuity platforms.
 
-![driving over uneven ground](Perseverance/Resources/images/driveUneven.png)
+# Experiments
 
-![driving over uneven ground](Perseverance/Resources/images/driveUneven.gif)
+* [Perseverance](Perseverance/README.md); model of the Perseverance rover.
+* [Ingenuity](Ingenuity/README.md); model of the Ingenuity helicopter.
+* [Example Models](ExampleModels/README.md); experiments showing how both the Perseverance and Ingenuity models can be simulated together.
 
-Prerequisites
--------
-The model package is based on **Vehicle Dynamics Library** and **Electrification Library** from Modelon. All prerequisites are included in an installation of **Modelon Impact Pro**. The models can also be used in Dymola with separate installations of the required libraries, though the visualizers (glb files) are not supported.
+# Compatibility with Modelon Impact Versions
 
-Quick start
---------
+| Github Branch                                                                              | Modelon Impact Version |
+|--------------------------------------------------------------------------------------------|------------------------|
+| [vdl-4.1](https://github.com/Open-MBEE/perseverance-modelica/tree/vdl-4.1)                 | Impact 2022.2 (1.8.)   |
+| [vdl-4-2-upgrade](https://github.com/Open-MBEE/perseverance-modelica/tree/vdl-4-2-upgrade) | Impact 2023.1 (1.10.)  |
+| [vdl-4-3-upgrade](https://github.com/Open-MBEE/perseverance-modelica/tree/vdl-4-3-upgrade) | Impact 2023.2 (2.9.*)  |
 
-In Perseverance.Experiments there are six example experiments that can be simulated out of the box:
- - **FlatPad** - Standing still on flat ground
- - **DrivingFlat** - Driving forward on flat ground at a constant speed
- - **DrivingCleats** - Driving over a rectangular cleat at a constant speed
- - **Spin** - Spin in place by driving wheels on each side in opposite directions and adding the appropriate steering angles to the corner wheels
- - **DrivingUneven** - Driving forward over uneven ground generated using the Spirit_landing_site 3D model
- - **DrivingUneven2** - Driving forward over uneven ground generated using the M2020 ZCAM -- Hogwallow Flats, Sol 461 3D model
+# Getting Started
 
-Acknowledgements
------------
-The visualization elements are extracted from https://github.com/nasa/NASA-3D-Resources/tree/master/3D%20Models/perseverance-GLB. This is also where the main geometrical parameters are gathered.
+Once logged into Modelon Impact Pro...
 
-The visualizer Perseverance/Resources/Spirit_landing_site.glb  is extracted from https://github.com/nasa/NASA-3D-Resources/tree/master/3D%20Models/Spirit%20Landing%20Site. This is also used to generate the VDL ground model data used in Perseverance.Experiments.DrivingUneven.
+1. Select **Repository Management** from the Apps menu.
+![step1](./img/step1.png)
+1. Select **New**
+	1. **Repository URL** - paste https://github.com/Open-MBEE/perseverance-modelica
+	1. Select **Git**
+	1. Consult the [Compatibility with Modelon Impact Versions](#Compatibility-with-Modelon-Impact-Versions) if you are using an older version of Modelon Impact.
+	1. Select **CLONE** - N.B. You need to configure your credentials before cloning a repository.
+![step2](./img/step2.png)
+1. Once cloned, the repository will display in the list of repositories.
+1. Click on **Workspace** above Repositories. If any workspace is open, the workspace name will show up. Click on 'Edit' and you'll see the `Perseverance` on the list of available libraries.
+![step4](./img/step4.png)
+1. Drag `Perseverance` on to the blue section under **EDITABLE LIBRARIES**.
+![step5](./img/step5.png)
+1. Select **Done** and go back to your Modelon Impact tab.
+1. Reload or refresh the page and you'll see the newly added repository on the left side panel.
 
-"M2020 ZCAM -- Hogwallow Flats, Sol 461" (https://skfb.ly/ovp6s) by Mastcam-Z is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+# License
 
-Ingenuity
-=====
+Licensed permissively under the [Apache License v2.0](https://apache.org/licenses/LICENSE-2.0) a copy of which ships with this codebase.
 
-This is a model of the Ingenuity helicopter.
+# Support
 
-![Hover](Ingenuity/Resources/images/hover.gif)
-
-Prerequisites
--------
-The model package is based on **Vehicle Dynamics Library** and **Electrification Library** from Modelon. All prerequisites are included in an installation of **Modelon Impact Pro**. The models can also be used in Dymola with separate installations of the required libraries, though the visualizers (glb files) are not supported.
-
-Quick start
---------
-
-In Ingenuity.Experiments there are six example experiments that can be simulated out of the box:
- - **ConstantThrust** - Constant thrust achieved by using Linear thrust force model
- - **Yaw** - Yaw motion achieved using a torque differential between the two rotors
- - **Hover** - Hovering motion at a constant altitude using AltitudeVelocityAnglesController and LinearPitchRoll thrust force model
- - **HoverRollPitch** - Roll and pitch motion at a constant altitude using AltitudeVelocityAnglesController and LinearPitchRoll thrust force model
- - **HoverVelocity** - Lateral and longitudinal velocity inputs at a constant altitude using AltitudeVelocityAnglesController and LinearPitchRoll thrust force model
- - **HoverPosition** - Lateral, longitudinal positon, altitude controller using AltitudePositionAnglesController and LinearPitchRoll thrust force model
-
-Acknowledgements
------------
-The visualization elements are extracted from https://mars.nasa.gov/resources/25043/mars-ingenuity-helicopter-3d-model/. This is also where the main geometrical parameters are gathered.
-
-ExampleModels
-=====
-
-This package contains experiments showing how both the Perseverance and Ingenuity models can be simulated together.
-
-![Hover](ExampleModels/Resources/images/roverAndHelicopter.gif)
+Please [open an issue](https://github.com/Open-MBEE/perseverance-modelica/issues).
