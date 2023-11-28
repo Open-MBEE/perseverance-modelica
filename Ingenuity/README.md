@@ -10,14 +10,14 @@ The model package is based on **[Vehicle Dynamics Library](https://modelon.com/l
 
 Experiments
 -----------
-The [Ingenuity.Experiments](./Ingenuity/Experiments) directory contains six example experiments that can be simulated out of the box:
+The [Ingenuity.Experiments](./Experiments) directory contains six example experiments that can be simulated out of the box:
 
- - **[ConstantThrust](./Ingenuity/Experiments/ConstantThrust.mo)** - Constant thrust achieved by using Linear thrust force model
- - **[Yaw](./Ingenuity/Experiments/Yaw.mo)** - Yaw motion achieved using a torque differential between the two rotors
- - **[Hover](./Ingenuity/Experiments/Hover.mo)** - Hovering motion at a constant altitude using AltitudeVelocityAnglesController and LinearPitchRoll thrust force model
- - **[HoverRollPitch](./Ingenuity/Experiments/HoverRollPitch.mo)** - Roll and pitch motion at a constant altitude using AltitudeVelocityAnglesController and LinearPitchRoll thrust force model
- - **[HoverVelocity](./Ingenuity/Experiments/HoverVelocity.mo)** - Lateral and longitudinal velocity inputs at a constant altitude using AltitudeVelocityAnglesController and LinearPitchRoll thrust force model
- - **[HoverPosition](./Ingenuity/Experiments/HoverPosition.mo)** - Lateral, longitudinal positon, altitude controller using AltitudePositionAnglesController and LinearPitchRoll thrust force model
+ - **[ConstantThrust](./Experiments/ConstantThrust.mo)** - Constant thrust achieved by using Linear thrust force model
+ - **[Yaw](./Experiments/Yaw.mo)** - Yaw motion achieved using a torque differential between the two rotors
+ - **[Hover](./Experiments/Hover.mo)** - Hovering motion at a constant altitude using AltitudeVelocityAnglesController and LinearPitchRoll thrust force model
+ - **[HoverRollPitch](./Experiments/HoverRollPitch.mo)** - Roll and pitch motion at a constant altitude using AltitudeVelocityAnglesController and LinearPitchRoll thrust force model
+ - **[HoverVelocity](./Experiments/HoverVelocity.mo)** - Lateral and longitudinal velocity inputs at a constant altitude using AltitudeVelocityAnglesController and LinearPitchRoll thrust force model
+ - **[HoverPosition](./Experiments/HoverPosition.mo)** - Lateral, longitudinal positon, altitude controller using AltitudePositionAnglesController and LinearPitchRoll thrust force model
 
 Acknowledgements
 ----------------
