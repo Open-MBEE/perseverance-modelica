@@ -13,14 +13,14 @@ The model package is based on **[Vehicle Dynamics Library](https://modelon.com/l
 
 Experiments
 -----------
-The [Perseverance.Experiments](./Perseverance/Experiments) directory contains six example experiments that can be simulated out of the box:
+The [Perseverance.Experiments](./Experiments) directory contains six example experiments that can be simulated out of the box:
 
- - **[FlatPad](./Perseverance/Experiments/FlatPad.mo)** - Standing still on flat ground
- - **[DrivingFlat](./Perseverance/Experiments/DrivingFlat.mo)** - Driving forward on flat ground at a constant speed
- - **[DrivingCleats](./Perseverance/Experiments/DrivingCleats.mo)** - Driving over a rectangular cleat at a constant speed
- - **[Spin](./Perseverance/Experiments/Spin.mo)** - Spin in place by driving wheels on each side in opposite directions and adding the appropriate steering angles to the corner wheels
- - **[DrivingUneven](./Perseverance/Experiments/DrivingUneven.mo)** - Driving forward over uneven ground generated using the Spirit_landing_site 3D model
- - **[DrivingUneven2](./Perseverance/Experiments/DrivingUneven2.mo)** - Driving forward over uneven ground generated using the M2020 ZCAM -- Hogwallow Flats, Sol 461 3D model
+ - **[FlatPad](./Experiments/FlatPad.mo)** - Standing still on flat ground
+ - **[DrivingFlat](./Experiments/DrivingFlat.mo)** - Driving forward on flat ground at a constant speed
+ - **[DrivingCleats](./Experiments/DrivingCleats.mo)** - Driving over a rectangular cleat at a constant speed
+ - **[Spin](./Experiments/Spin.mo)** - Spin in place by driving wheels on each side in opposite directions and adding the appropriate steering angles to the corner wheels
+ - **[DrivingUneven](./Experiments/DrivingUneven.mo)** - Driving forward over uneven ground generated using the Spirit_landing_site 3D model
+ - **[DrivingUneven2](./Experiments/DrivingUneven2.mo)** - Driving forward over uneven ground generated using the M2020 ZCAM -- Hogwallow Flats, Sol 461 3D model
 
 
 Acknowledgements
